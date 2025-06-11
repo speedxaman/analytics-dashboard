@@ -30,6 +30,8 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+
+
 /* Mobile optimizations */
 @media (max-width: 576px) {
     .card-body {
@@ -100,4 +102,10 @@
 
 .btn-sm {
     font-size: 0.75rem;
+}
+
+@media (max-width: 1028px) and (min-width: 990px) {
+  .sidebar-icon{
+    width: 2.5rem !important;
+  }
 }
