@@ -30,6 +30,74 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.h-100 {
-    height: 90% !important;
+/* Mobile optimizations */
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1rem 0.75rem;
+    }
+
+    .fs-4 {
+        font-size: 1.1rem !important;
+    }
+
+    .badge.small {
+        font-size: 0.65rem;
+    }
+
+    .table td {
+        padding: 0.5rem 0.25rem;
+        font-size: 0.875rem;
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* Tablet optimizations */
+@media (min-width: 577px) and (max-width: 1200px) {
+    .card-body {
+        padding: 1.25rem;
+    }
+}
+
+/* Ensure bottom navigation doesn't overlap content */
+@media (max-width: 991px) {
+    .main-content {
+        margin-bottom: 60px;
+    }
+}
+
+/* Custom scrollbar for table */
+.table-responsive {
+    scrollbar-width: thin;
+    scrollbar-color: #dee2e6 transparent;
+}
+
+.table-responsive::-webkit-scrollbar {
+    height: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #dee2e6;
+    border-radius: 3px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #adb5bd;
+}
+
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.btn-sm {
+    font-size: 0.75rem;
 }
